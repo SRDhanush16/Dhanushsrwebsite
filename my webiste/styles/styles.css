@@ -1,0 +1,467 @@
+
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#F5F5F5;
+    position: fixed;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    width: 100%;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .Myname {
+    font-size: 2.6rem;
+    font-weight:bolder;
+    color:#121212;
+
+  } 
+  .Myname:hover{
+    color:#F05454;
+  }
+
+
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight:bold;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #F5F5F5;
+  background-color: #30475E;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #F05454 ;
+  color:#F5F5F5; 
+}
+
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+/**************************/
+/* section hero*/
+/**************************/
+
+.section-hero{
+    padding: 10rem 0 9.6rem 0;
+    
+  }
+  
+.hero{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    padding-top: 5rem;
+    display: flex;
+    gap: 0rem;
+    justify-content: space-between;
+}
+
+.hero-intro {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 30%;
+}
+
+.hero-img{
+    border-radius: 50%;
+    width: 20rem;
+    height: 25rem;
+    margin-bottom:1.75rem ;
+}
+
+.hero-intro h2{
+  font-size: 3.2rem;
+  line-height: 1.4;
+}
+
+.hero-intro h3{
+  font-size: 2.4rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.hero-intro  h4{
+  font-size: 2rem;
+  line-height: 1;
+  font-weight:400;
+  color: #30475E;
+}
+
+.hero-intro .socialmedia{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-intro a{
+  text-decoration: none; /* Remove default underline */
+  margin: 0 0.5rem;
+}
+
+
+.hero-about{
+  display: flex;
+  flex-direction: column;
+  max-width: 65%;
+}
+
+.hero-about p{
+  font-size:2rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-about-intedu{
+  display: flex;
+  gap:3rem;
+}
+
+.hero-about-intedu h2{
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+  
+.hero-about-intedu ul{
+  padding-left: 2.5rem;
+}
+
+.hero-about-intedu li{
+  font-size:1.6rem ;
+  margin-bottom: 1rem;
+}
+
+.about-edu ul{
+  list-style-image:  url('../images/mortarboard.png');
+}
+/**************************/
+/* section Quote*/
+/**************************/
+
+.Quote{
+    height:12rem;
+    background-color: #30475E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F5F5F5;   
+}
+.Quote p{
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin: auto 0;
+}
+
+
+  /**************************/
+/* section Experience*/
+/**************************/
+
+.experience{
+    padding: 4.8rem 0rem;
+    background-color: #ffffff;
+    
+}
+
+.exp-grid{
+    display: flex;
+    gap: 5rem;
+    height: 30rem;
+}
+.exp-grid .exp-grid-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-grid .exp-grid-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.expcard {
+    border: 0.5px solid #d3d1cd; 
+    border-radius: 4px; 
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, transform 0.2s ease-in-out; 
+    background: linear-gradient(to bottom, #e4ecf3, #f9f9f9);
+
+}
+.expcard:hover {
+    background-color: #e3e3e3; 
+    transform: scale(1.02); 
+    border: 0.5px solid #d3d1cd
+}
+
+.expcard p{
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+  /**************************/
+/* section Projects*/
+/**************************/
+
+  .Skills{
+    padding: 4.8rem 0rem;
+  }
+
+  .Skills  h1{
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .center-skl-content{
+    display: flex;
+    justify-content: center;
+  }
+
+  .skl-content {
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5rem;
+    column-gap: 20rem;
+    align-items: center;
+    justify-content: center; /* Add this line to center the grid horizontally */
+    text-align: center; /* Add this line to center the content within each grid item */
+}
+
+  .skl-img-container{
+    max-width: 13rem;
+    max-height: 13rem;
+  }
+
+  .skl-img-container img{
+    width: 100%;
+    height: 100%;
+  }
+
+  
+
+
+
+  /**************************/
+/* section Certifications*/
+/**************************/
+
+  .Certifications{
+    padding: 4.8rem 0rem;
+    background-color: white;
+  }
+
+  .Certifications h1{
+    text-align: center;
+  }
+
+
+
+  .cardsss{
+    display: flex;
+    padding: 3rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card{
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 2%;
+    
+    margin:0 3rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+
+  }
+
+  .cds2c{
+    width: 28.05%;
+  }
+
+  .card-img{
+    height: 50%;
+    width: 100%;
+  }
+
+  .card-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 2%; 
+    border-top-right-radius: 2%;
+  }
+
+  .card-content{
+    padding: 2rem;
+  }
+
+  .card-content h2{
+    line-height: 1;
+  }
+
+  .card-content p{
+    font-size: 1.4rem;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .card-content ul{
+    list-style: none;
+    margin-bottom: 1rem;
+
+  }
+
+  .card-content li{
+    font-size: 1.2rem;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    border-radius: 10%;
+    padding: 0.6rem 0.6rem;
+    margin-right:1rem;
+  }
+  /**************************/
+/* section Projects*/
+/**************************/
+
+
+  .Projects{
+    padding: 4.8rem 0rem;
+  }
+
+  .Projects h1{
+    text-align: center;
+  }
+ 
+  .tag-button {
+    display:block;
+    padding: 0.8rem 1.2rem;
+    background-color:whitesmoke;
+    color:black;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+  /* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+ 
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.proj-card{
+  margin: 1rem 0rem;
+}
+
+.proj-card p:nth-child(2) {
+  font-size: 1.4rem;
+}
+
+.proj-card a{
+  text-decoration: none;
+}
+
+  /**************************/
+/* Achievementsr*/
+/**************************/
+
+  .Achievements{
+    background-color: #ffffff;
+  }
+
+  .Achievements a{
+    text-decoration: none;
+  }
+
+  /**************************/
+/* Footer*/
+/**************************/
+
+.Footer{
+  
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #30475E;
+  color: #f1f1f1;
+}
+
+.Footer p{
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  margin:1rem 0rem;
+}
